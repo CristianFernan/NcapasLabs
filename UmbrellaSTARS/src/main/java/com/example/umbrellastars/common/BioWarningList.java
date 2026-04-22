@@ -36,6 +36,18 @@ public class BioWarningList {
                 .build());
 
         this.biologicalWarnings.add(BiologicalWarning.builder()
+                .id(4)
+                .name("Smoker")
+                .baseVirus("G-virus")
+                .riskLevel(5)
+                .weakPoint("tongue")
+                .currentState("Free")
+                .lastSeen("Town")
+                .originPlace("Comissary")
+                .build());
+
+
+        this.biologicalWarnings.add(BiologicalWarning.builder()
                 .id(3)
                 .name("Hunter")
                 .baseVirus("Plague")
