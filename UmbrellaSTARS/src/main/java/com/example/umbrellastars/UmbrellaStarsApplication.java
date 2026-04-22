@@ -24,15 +24,15 @@ public class UmbrellaStarsApplication {
           // por virus base
           System.out.println("=====BOWs by base Virus====");
           bioWarningService.findByBaseVirus("G-virus").forEach(bow ->
-                  System.out.println("[S.T.A.R.S-REPORT] Nombre: " + bow.getName() +" | Nivel de Peligro:" + bow.getRiskLevel() + " | Punto Débil: " + bow.getWeakPoint()));
+                  System.out.println("[S.T.A.R.S-REPORT] Name: " + bow.getName() +" | Risk Lvl:" + bow.getRiskLevel() + " | Weak point: " + bow.getWeakPoint()));
           // por estado actual
           System.out.println("=====BOWs by their current state====");
           bioWarningService.findByCurrentState("Eliminated").forEach(bow ->
-                  System.out.println("[S.T.A.R.S-REPORT] Nombre: " + bow.getName() +" | Nivel de Peligro:" + bow.getRiskLevel() + " | Punto Débil: " + bow.getWeakPoint()));
+                  System.out.println("[S.T.A.R.S-REPORT] Name: " + bow.getName() +" | Risk Lvl:" + bow.getRiskLevel() + " | Weak point: " + bow.getWeakPoint()));
           // los que son activos, sin repetir
           System.out.println("=====Free Distinct BOWs====");
           bioWarningService.findDistinctVirus().forEach(bow ->
-                  System.out.println("[S.T.A.R.S-REPORT] Nombre: " + bow.getName() +" | Nivel de Peligro:" + bow.getRiskLevel() + " | Punto Débil: " + bow.getWeakPoint()));
+                  System.out.println("[S.T.A.R.S-REPORT] Name: " + bow.getName() +" | Risk Lvl:" + bow.getRiskLevel() + " | Weak point: " + bow.getWeakPoint()));
       };
     };
 }
