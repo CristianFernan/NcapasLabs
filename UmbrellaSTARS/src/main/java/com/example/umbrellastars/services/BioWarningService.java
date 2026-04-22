@@ -16,4 +16,31 @@ public class BioWarningService {
         return  bioWarningRepository.findAll();
     }
 
+    //Filtrado por virus base
+    public List<BiologicalWarning> findByBaseVirus(String baseVirus){
+        return bioWarningRepository.findAll()
+                .stream()
+                .filter(obj -> obj.getBaseVirus()
+                        .equals(baseVirus))
+                .toList();
+    }
+    //Filtrado por estado actual
+    public List<BiologicalWarning> findByCurrentState(String currentState){
+        return bioWarningRepository.findAll()
+                .stream()
+                .filter(obj -> obj.getCurrentState()
+                        .equals(currentState))
+                .toList();
+    }
+
+    //Virus sin repetición (usar distinct)
+    public List<BiologicalWarning> findDistinctVirus(){
+        return bioWarningRepository.findAll()
+                .stream()
+                .filter(obj -> obj.getBaseVirus()
+                        .equals("Free"))
+                .distinct()
+                .toList();
+    }
+
 }
