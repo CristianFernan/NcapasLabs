@@ -32,7 +32,7 @@ public class UmbrellaStarsApplication {
           // los que son activos, sin repetir
           System.out.println("=====Free Distinct BOWs====");
           bioWarningService.findDistinctVirus().forEach(bow ->
-                  System.out.println("[S.T.A.R.S-REPORT] Name: " + bow.getName() +" | Risk Lvl:" + bow.getRiskLevel() + " | Weak point: " + bow.getWeakPoint()));
+                  System.out.println("[S.T.A.R.S-REPORT] Base virus: " + bow.getBaseVirus()));
       };
     };
 }

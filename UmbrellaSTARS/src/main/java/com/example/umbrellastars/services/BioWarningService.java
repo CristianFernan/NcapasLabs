@@ -37,7 +37,7 @@ public class BioWarningService {
     public List<BiologicalWarning> findDistinctVirus(){
         return bioWarningRepository.findAll()
                 .stream()
-                .filter(obj -> obj.getBaseVirus()
+                .filter(obj -> obj.getCurrentState()
                         .equals("Free"))
                 .distinct()
                 .toList();
