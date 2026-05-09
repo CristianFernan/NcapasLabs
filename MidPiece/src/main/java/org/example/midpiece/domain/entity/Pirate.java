@@ -23,13 +23,13 @@ public class Pirate {
     private String name;
 
     @Column(name =  "bounty")
-    private double bounty;
+    private Double bounty;
 
     @Column(name = "pirateCrew")
-    private String pirate;
+    private String crew;
 
     @Column(name =  "isAlive")
-    private boolean isAlive;
+    private Boolean isAlive;
 
 
 }
