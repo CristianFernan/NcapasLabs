@@ -1,0 +1,69 @@
+{
+  "name": "Silent Princess",
+  "region": "Hyrule Field",
+  "dangerLevel": 1,
+  "isFriendly": true
+}
+
+{
+  "name": "Fire Keese",
+  "region": "Death Mountain",
+  "dangerLevel": 4,
+  "isFriendly": false
+}
+
+{
+  "name": "Ice ChuChu",
+  "region": "Hebra",
+  "dangerLevel": 3,
+  "isFriendly": false
+}
+
+{
+  "name": "Voltfin Trout",
+  "region": "Lanayru",
+  "dangerLevel": 2,
+  "isFriendly": true
+}
+
+{
+  "name": "Swift Violet",
+  "region": "Faron",
+  "dangerLevel": 1,
+  "isFriendly": true
+}
+
+{
+  "name": "Stone Talus",
+  "region": "Eldin",
+  "dangerLevel": 5,
+  "isFriendly": false
+}
+
+{
+  "name": "Electric Lizalfos",
+  "region": "Gerudo Desert",
+  "dangerLevel": 4,
+  "isFriendly": false
+}
+
+{
+  "name": "Restless Cricket",
+  "region": "Central Hyrule",
+  "dangerLevel": 1,
+  "isFriendly": true
+}
+
+{
+  "name": "Mighty Banana",
+  "region": "Faron",
+  "dangerLevel": 1,
+  "isFriendly": true
+}
+
+{
+  "name": "Guardian Scout",
+  "region": "Akkala",
+  "dangerLevel": 5,
+  "isFriendly": false
+}
