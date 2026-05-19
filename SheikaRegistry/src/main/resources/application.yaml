@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SheikaRegistry
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SheikahRegistry
+    username: postgres
+    password: 12345
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
