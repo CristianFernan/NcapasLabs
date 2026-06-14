@@ -40,7 +40,10 @@ public class DataInitializer implements CommandLineRunner {
                 perm("POST",   "/api/roles"),
                 perm("PUT",    "/api/roles/**"),
                 perm("GET",    "/api/permissions"),
+                perm("POST",   "/api/permissions"),
+                perm("DELETE", "/api/permissions/**"),
                 perm("GET",    "/api/users"),
+                perm("POST",   "/api/users"),        // ← faltaba este
                 perm("PUT",    "/api/users/**"),
                 perm("DELETE", "/api/users/**"),
                 perm("GET",    "/api/prestamos"),

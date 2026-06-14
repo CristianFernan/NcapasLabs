@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Permission")
+@Table(name = "Permissions")
 public class Permission {
 
     @Id
@@ -13,8 +13,7 @@ public class Permission {
     private Integer id;
 
     @Column(nullable = false)
-    private String method;   // GET, POST, PUT, DELETE
-
+    private String method;
     @Column(nullable = false)
-    private String path;     // /api/prestamos, /api/prestamos/**
+    private String path;
 }

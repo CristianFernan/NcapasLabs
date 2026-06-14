@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/leases_credits
     username: postgres
-    password: tu_password
+    password: 12345
 
   jpa:
     hibernate:
@@ -21,6 +21,6 @@ spring:
 
 security:
   jwt:
-    secret-key: "Zm9vYmFyYmF6cXV4c2VjcmV0a2V5MTIzNDU="
+    secret-key: "dGhpcmlzYXZlcnlsb25nc2VjcmV0a2V5Zm9yandiZXhhbXBsZXRlc3QxMjM0NTY3ODk="
     expiration-time: 3600000
 

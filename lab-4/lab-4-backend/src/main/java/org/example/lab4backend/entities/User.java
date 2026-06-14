@@ -1,11 +1,12 @@
 package org.example.lab4backend.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "User")
+@Table(name = "Users")
 public class User {
 
     @Id
@@ -26,5 +27,6 @@ public class User {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "role_id", nullable = false)
+    @JsonIgnoreProperties("permissions")
     private Role role;
 }

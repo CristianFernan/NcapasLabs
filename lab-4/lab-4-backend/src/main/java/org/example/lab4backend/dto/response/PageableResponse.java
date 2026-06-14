@@ -8,10 +8,24 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PageableResponse<T> {
-    private List<T> content;
-    private int page;
-    private int size;
-    private long totalElements;
-    private int totalPages;
-    private boolean last;
+    private List<T> data;
+    private PaginationMeta pagination;
+
+    public PageableResponse(List<T> content, int page, int size, long total) {
+        this.data = content;
+        this.pagination = new PaginationMeta(page, size, total);
+    }
+
+    @Data
+    public static class PaginationMeta {
+        private int page;
+        private int pageSize;
+        private long total;
+
+        public PaginationMeta(int page, int pageSize, long total) {
+            this.page = page;
+            this.pageSize = pageSize;
+            this.total = total;
+        }
+    }
 }

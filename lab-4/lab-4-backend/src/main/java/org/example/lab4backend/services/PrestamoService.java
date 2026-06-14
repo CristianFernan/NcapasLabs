@@ -97,15 +97,13 @@ public class PrestamoService {
     public PageableResponse<PrestamoResponse> listar(int page, int size) {
         Page<Prestamo> result = prestamoRepository.findAll(PageRequest.of(page, size));
         List<PrestamoResponse> content = result.getContent().stream().map(this::toResponse).toList();
-            return new PageableResponse<>(content, page, size, result.getTotalElements(),
-                result.getTotalPages(), result.isLast());
+            return new PageableResponse<>(content, page, size, result.getTotalElements());
     }
 
     public PageableResponse<PrestamoResponse> listarPorUsuario(Integer usuarioId, int page, int size) {
         Page<Prestamo> result = prestamoRepository.findByUsuarioId(usuarioId, PageRequest.of(page, size));
         List<PrestamoResponse> content = result.getContent().stream().map(this::toResponse).toList();
-        return new PageableResponse<>(content, page, size, result.getTotalElements(),
-                result.getTotalPages(), result.isLast());
+        return new PageableResponse<>(content, page, size, result.getTotalElements());
     }
 
     public List<PlanPagoResponse> obtenerPlan(Integer prestamoId) {
